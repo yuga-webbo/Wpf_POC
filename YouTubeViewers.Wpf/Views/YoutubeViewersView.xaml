@@ -17,7 +17,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" FontSize="28" Text="YouTube Viewers"/>
+            <TextBlock Grid.Column="0" Style="{StaticResource PageHeader}" Text="YouTube Viewers"/>
             <Button Grid.Column="1" Content="Add" Command="{Binding AddYoutubeViewersCommand}"/>
         </Grid>
         <Grid Grid.Row="1" Margin="0 20 0 0">
