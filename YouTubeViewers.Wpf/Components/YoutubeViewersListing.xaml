@@ -14,7 +14,7 @@
                     <VisualBrush Visual="{Binding ElementName=border}"/>
                 </Grid.OpacityMask>
                 <Border x:Name="border" Background="White" CornerRadius="5"/>
-                <ListView BorderThickness="0" ItemsSource="{Binding YoutubeViewersListingItemViewModel}">
+                <ListView BorderThickness="0" SelectedItem="{Binding SelectedYoutubeViewersListingItemViewModel}" ItemsSource="{Binding YoutubeViewersListingItemViewModel}">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
