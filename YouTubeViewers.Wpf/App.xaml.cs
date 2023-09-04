@@ -15,9 +15,11 @@ namespace YouTubeViewers.Wpf
     /// </summary>
     public partial class App : Application
     {
+        private readonly ModelNavigationStore _modelNavigationStore;
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
         public App()
         {
+            _modelNavigationStore=new ModelNavigationStore();
             _selectedYoutubeViewerStore = new SelectedYoutubeViewerStore();
         }
         protected override void OnStartup(StartupEventArgs e)
